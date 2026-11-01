@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7f4ec" />
+  <meta name="description" content="A little time machine for the internet we grew up with. Find the songs, games and moments that made your India." />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <title>Backscroll — India’s Internet Time Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css?v=membership-card-3" />
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> A LITTLE TIME MACHINE FOR THE INTERNET WE GREW UP WITH <span class="announcement-year">EST. YOUR MEMORY</span></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Backscroll home"><span class="brand-mark">b.</span><span>backscroll<span class="brand-period">.</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a class="nav-active" href="#explore">The archive</a><a href="#how-it-works">How it works</a></nav>
+    <a href="#add-memory" class="header-cta">Add your memory <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> YOUR INTERNET CHILDHOOD, REWOUND</div>
+        <h1>The internet<br />we grew up <em>on.</em></h1>
+        <p class="hero-description">Dial-up days. Orkut scraps. That one song everyone knew.<br class="desktop-break" /> Take a little trip through the moments that made yours.</p>
+        <a href="#explore" class="primary-button">Take me back <span>↓</span></a>
+        <div class="hero-social-proof"><div class="avatar-stack"><span>R</span><span>A</span><span>M</span><span>S</span></div><p><strong>A memory is waiting.</strong><br />Maybe it’s yours to add.</p></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of nostalgic objects from an Indian childhood">
+        <div class="sun-stamp">A<br />GOOD<br />OLD<br />TIME <span>✳</span></div>
+        <div class="art-caption"><span>SCENE NO. 001</span><span>THE 2000s, SOMEWHERE IN INDIA</span></div>
+        <div class="scene">
+          <div class="scene-sky"></div><div class="scene-window"><div class="window-cross"></div><div class="window-plant">✳</div></div>
+          <div class="scene-shelf"></div><div class="scene-books"><i></i><i></i><i></i><i></i></div>
+          <div class="scene-monitor"><div class="monitor-top"><span>● ● ●</span><b>internet.exe</b><span>— □ ×</span></div><div class="monitor-screen"><div class="screen-logo">orkut<span>!</span></div><div class="screen-message">you have<br />1 new scrap</div><div class="screen-button">open scrapbook</div><div class="screen-stars">✳ &nbsp; ✦ &nbsp; ✳</div></div><div class="monitor-neck"></div><div class="monitor-base"></div></div>
+          <div class="scene-mug"><div class="mug-handle"></div><span>chai</span></div><div class="scene-disc"><div></div></div>
+          <div class="scene-phone"><div class="phone-screen"><span>9:41</span><div class="phone-face">☺</div><small>1 new message</small></div><div class="phone-button"></div></div>
+          <div class="scene-plants">♣</div>
+        </div>
+        <div class="art-tape">remember this? <span>↗</span></div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO REMEMBER</span><span class="scroll-rule"></span><span>2000 — NOW</span></div>
+    </section>
+
+    <section class="memory-intro" id="how-it-works">
+      <p class="eyebrow"><span class="eyebrow-line"></span> SMALL MOMENTS. BIG FEELINGS.</p>
+      <div class="intro-grid"><h2>Somewhere in your<br />memory, <em>it’s still loading.</em></h2><p>We’re collecting the songs, screens, games and tiny rituals that made growing up online in India feel like <i>your</i> internet. Pick a year. Find your people. Add what we missed.</p></div>
+      <div class="stat-row"><div><strong>01</strong><span>Pick your era</span></div><div><strong>02</strong><span>Take the trip</span></div><div><strong>03</strong><span>Add your bit</span></div><div class="stat-note">Made of memories,<br />still being written.</div></div>
+    </section>
+
+    <section class="archive-section" id="explore">
+      <div class="section-top"><div><p class="eyebrow"><span class="eyebrow-line"></span> THE MEMORY ARCHIVE</p><h2>Where were <em>you</em><br />when this happened?</h2></div><p class="section-aside">A living scrapbook of the stuff<br />we still talk about.</p></div>
+      <div class="filter-bar"><div class="year-control"><span>TAKE ME TO</span><label class="sr-only" for="year-select">Choose a year</label><select id="year-select"><option value="all">Any year</option></select><span class="select-arrow">⌄</span></div><div class="category-filters" role="group" aria-label="Filter by category"><button class="filter-chip active" data-category="All">Everything</button><button class="filter-chip" data-category="Internet">Internet</button><button class="filter-chip" data-category="Games">Games</button><button class="filter-chip" data-category="Music">Music</button><button class="filter-chip" data-category="TV &amp; music">TV &amp; music</button><button class="filter-chip" data-category="Sport">Sport</button><button class="filter-chip" data-category="Everyday life">Everyday life</button></div><label class="search-box"><span>⌕</span><input id="search-input" type="search" placeholder="Find a memory" /><kbd>↵</kbd></label></div>
+      <div class="archive-meta"><span id="result-count">Loading memories…</span><span>CURATED WITH CARE <i>✳</i></span></div>
+      <div class="memory-grid" id="memory-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden><span>◌</span><h3>No memories in this corner yet.</h3><p>Try another year or category — or add the one we’re missing.</p><a href="#add-memory" class="text-link">Leave a memory <b>↗</b></a></div>
+      <div class="archive-footer"><span>THE ARCHIVE IS A WORK IN PROGRESS</span><a href="#add-memory">Know a moment we missed? Tell us <b>↗</b></a></div>
+    </section>
+
+    <section class="add-memory-section" id="add-memory">
+      <div class="add-memory-art"><div class="doodle-sun">✳</div><div class="doodle-orbit orbit-one"></div><div class="doodle-orbit orbit-two"></div><div class="doodle-stamp">FROM<br />YOUR<br />MEMORY<br /><span>WITH LOVE</span></div><span class="doodle-star star-one">✦</span><span class="doodle-star star-two">✳</span><span class="doodle-note">every story<br />counts ↗</span></div>
+      <div class="add-memory-content"><p class="eyebrow"><span class="eyebrow-line"></span> THIS SCRAPBOOK NEEDS YOU</p><h2>Got a memory<br />we <em>missed?</em></h2><p class="add-description">The best bits aren’t always famous. They’re the ringtone your dad had for a decade, the cyber café around the corner, the song from your first school dance.</p><form id="memory-form"><input type="hidden" name="momentId" id="memory-moment-id" />
+<fieldset class="posting-identity" aria-label="Choose how to post"><legend>HOW SHOULD YOUR MEMORY APPEAR?</legend><label><input type="radio" name="postingIdentity" id="post-anonymous" value="anonymous" checked /> <span><strong>Post anonymously</strong><small>Your member details stay off this memory.</small></span></label><label><input type="radio" name="postingIdentity" id="post-as-member" value="member" disabled /> <span><strong id="member-post-label">Post as a member</strong><small>Your member ID appears with this memory.</small></span></label></fieldset>
+<section class="membership-box" aria-labelledby="membership-heading"><div class="membership-copy"><strong id="membership-heading">Want a place in the scrapbook?</strong><p>Become a member to get a reusable ID. Membership is optional; anonymous memories are always welcome.</p><label class="member-name-field" for="member-display-name">Display name (optional) <input id="member-display-name" maxlength="40" placeholder="Leave blank to use your ID" /></label></div><button type="button" class="member-join-button" id="join-member-button">Become a member <span>↗</span></button><div class="member-credential-card" id="member-credential-card" hidden><p class="member-ready">You’re in the scrapbook. Save your private recovery key somewhere safe.</p><label>Member ID <input id="member-id-output" readonly /></label><label>Private recovery key <input id="member-token-output" type="password" readonly /></label><button type="button" id="toggle-member-key" class="quiet-button">Show recovery key</button><button type="button" id="copy-member-details" class="quiet-button">Copy member details</button></div><details class="member-recover" id="member-recover"><summary>Already a member? Restore your ID on this device</summary><label>Member ID <input id="recover-member-id" placeholder="BS-…" autocomplete="username" /></label><label>Private recovery key <input id="recover-member-token" type="password" placeholder="Your saved recovery key" autocomplete="current-password" /></label><button type="button" id="restore-member" class="quiet-button">Use this membership</button></details><p class="member-status" id="member-status" role="status"></p></section><label for="memory-text">Your little piece of the internet</label><textarea id="memory-text" name="text" rows="3" maxlength="500" placeholder="I remember when…" required minlength="12"></textarea><div class="form-row"><label for="memory-era">Around what year? <input id="memory-era" name="era" inputmode="numeric" placeholder="e.g. 2008" maxlength="40" /></label><label for="memory-region">Where in India? <input id="memory-region" name="region" placeholder="Your city, state or ‘everywhere’" maxlength="80" /></label></div><label class="language-field" for="memory-language">What language did your internet speak? <select id="memory-language" name="language"><option value="">Choose one (optional)</option><option>Hindi</option><option>English</option><option>Tamil</option><option>Telugu</option><option>Bengali</option><option>Marathi</option><option>Kannada</option><option>Malayalam</option><option>Gujarati</option><option>Punjabi</option><option>Other</option></select></label><div class="form-bottom"><p>Your memory will be reviewed before it joins the archive.</p><button type="submit" class="primary-button">Add to the scrapbook <span>↗</span></button></div><p class="form-status" id="form-status" role="status"></p></form></div>
+    </section>
+
+    <section class="closing-note"><span class="closing-sparkle">✳</span><p>THE INTERNET WAS BIG.<br /><em>OUR CORNER OF IT WAS OURS.</em></p><a href="#top" aria-label="Back to top">↑</a></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">b.</span><span>backscroll<span class="brand-period">.</span></span></a><span>A LITTLE INTERNET TIME CAPSULE, MADE IN INDIA <i>✳</i></span><div class="footer-links"><a href="/admin">Archive editor ↗</a><a href="#add-memory">Add a memory ↗</a></div></footer>
+  <dialog class="moment-dialog" id="moment-dialog"><button class="dialog-close" aria-label="Close">×</button><p class="eyebrow" id="dialog-category"></p><h2 id="dialog-title"></h2><p id="dialog-description"></p><div class="dialog-memory" id="dialog-community" hidden></div><a id="dialog-source" target="_blank" rel="noreferrer">Read the source ↗</a><button class="dialog-share" id="dialog-share">Copy link to this moment <span>↗</span></button><a href="#add-memory" class="dialog-add">Add your memory to this moment <span>↗</span></a></dialog>
+  <script src="/app.js?v=membership-flow-1" defer></script>
+</body>
+</html>
